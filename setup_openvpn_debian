@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wget http://swupdate.openvpn.org/as/openvpn-as-2.1.4-Debian8.amd_64.deb
+sudo dpkg -i openvpn-as-2.1.4-Debian8.amd_64.deb
+echo "Enter password for openvpn user:"
+sudo passwd openvpn
+rm openvpn-as-2.1.4-Debian8.amd_64.deb
